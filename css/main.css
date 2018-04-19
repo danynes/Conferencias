@@ -424,6 +424,9 @@ div.detalle-evento p i{
   margin-left:  1px;
   padding: 5px;
 }
+div.ocultar {
+  display: none;
+}
 /* detalle evento*/
 div.detalle-evento{
   margin-top: 20px;

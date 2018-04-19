@@ -163,3 +163,16 @@ var informacion = new google.maps.InfoWindow({
 
   });//DOM CONTENT LOADED
 })();
+
+
+
+  $(function(){
+
+      $('.programa-evento .info-curso:first').show();
+      $('.menu-programa a').on('click', function(){
+
+        var enlace = $(this).attr('href');
+        console.log(enlace);
+      });
+
+  });
