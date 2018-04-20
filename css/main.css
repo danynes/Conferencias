@@ -395,7 +395,6 @@ div.programa-evento{
 }
 nav.menu-programa{
   width: 100%;
-  border-bottom: 1px solid #fe4918;
 
 }
 @media only screen and (min-width:768px){
@@ -413,6 +412,8 @@ nav.menu-programa a{
   font-size: 1.4em;
   position: relative;
     padding-bottom: 10px;
+    border-bottom: 1px solid #fe4918;
+
 }
 nav.menu-programa a.activo::after{
   position: absolute;
