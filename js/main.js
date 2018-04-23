@@ -167,6 +167,11 @@ var informacion = new google.maps.InfoWindow({
 
 
   $(function(){
+
+    //lettering
+      $('.nombre-del-sitio').lettering();
+
+
       // programa de conferencia
       $('.programa-evento .info-curso:first').show();
       $('.menu-programa a:first').addClass('activo');
