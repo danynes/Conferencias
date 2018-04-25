@@ -172,6 +172,24 @@ var informacion = new google.maps.InfoWindow({
       $('.nombre-del-sitio').lettering();
 
 
+      //menu fijo
+      var windowHeight = $(window).height();
+      var barraAltura = $('.barra').innerHeight();
+
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+
+        if (scroll > windowHeight) {
+          $('.barra').addClass('fixed');
+          $('body').ccs({'margin-top':barraAltura + 'px'});
+        }else {
+          $('.barra').removeClass('fixed');
+          $('body').ccs({'margin-top':'0px'});
+        }
+
+      });
+
+
       // programa de conferencia
       $('.programa-evento .info-curso:first').show();
       $('.menu-programa a:first').addClass('activo');
