@@ -181,7 +181,7 @@ var informacion = new google.maps.InfoWindow({
 
         if (scroll > windowHeight) {
           $('.barra').addClass('fixed');
-          $('body').ccs({'margin-top':barraAltura + 'px'});
+          $('body').ccs({'margin-top': barraAltura + 'px'});
         }else {
           $('.barra').removeClass('fixed');
           $('body').ccs({'margin-top':'0px'});
