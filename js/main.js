@@ -178,22 +178,27 @@ var informacion = new google.maps.InfoWindow({
 
       $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-
         if (scroll > windowHeight) {
           $('.barra').addClass('fixed');
-          $('body').ccs({'margin-top': barraAltura + 'px'});
+          $('body').css({'margin-top': barraAltura+'px'});
         }else {
           $('.barra').removeClass('fixed');
-          $('body').ccs({'margin-top':'0px'});
+          $('body').css({'margin-top':'0px'});
         }
 
+      });
+
+
+      //Menu responsivo
+
+      $('.menu-movil').on('click', function() {
+        $('.navegacion-principal').slideToggle();
       });
 
 
       // programa de conferencia
       $('.programa-evento .info-curso:first').show();
       $('.menu-programa a:first').addClass('activo');
-
 
       $('.menu-programa a').on('click', function(){
       $('.menu-programa a').removeClass('activo');

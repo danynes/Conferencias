@@ -103,7 +103,7 @@ textarea {
    *,*:before,*:after {
      box-sizing: inherit;
    }
-   body {
+    {
      background-color: #f2f2f2;
      font-family: 'Open Sans', sans-serif;
    }
@@ -371,7 +371,7 @@ textarea {
      nav.navegacion-principal a {
        padding: 10px 10px;
        display: inline-block;
-       width:auto;
+       width: auto;
        display: inline-block;
        text-align: center;
        margin:0 10px 0 0;
