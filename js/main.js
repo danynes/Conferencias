@@ -59,6 +59,9 @@ var informacion = new google.maps.InfoWindow({
     var camisas = document.getElementById('camisa_evento');
     var etiqueta = document.getElementById('etiquetas');
 
+    if (document.getElementById('calcular')) {
+
+
 
     calcular.addEventListener('click', calcularMontos);
 
@@ -159,6 +162,7 @@ var informacion = new google.maps.InfoWindow({
           }
 
     }
+  }
 
 
   });//DOM CONTENT LOADED
